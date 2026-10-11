@@ -42,7 +42,7 @@ console.table(teamMembers);
  
 const teamListEl = document.querySelector('.team-list');
 
-teamMembers.forEach((member) =>{
+/*teamMembers.forEach((member) =>{
 
   const article = document.createElement('article'); 
   article.classList.add('item'); 
@@ -73,4 +73,23 @@ teamMembers.forEach((member) =>{
   divDati.append(name, role, email) 
   article.append(imgContainer, divDati) 
   teamListEl.append(article)
+})
+  */
+
+
+teamMembers.forEach((member) =>{
+
+  const card = `
+  <article class="item">
+      <div class="img-container">
+          <img class="img" src="${member.img}" alt="Foto di ${member.name}">
+      </div>
+      <div class="dati">
+          <h2 class="nome">${member.name}</h2>
+          <p class="role">${member.role}</p>
+          <a href="mailto:${member.email}">${member.email}</a>
+      </div>
+  </article>`;
+
+  teamListEl.innerHTML += card
 })
