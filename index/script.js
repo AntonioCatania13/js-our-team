@@ -52,9 +52,25 @@ teamMembers.forEach((member) =>{
   
   const img = document.createElement('img'); 
   img.classList.add('img');
+  img.src = member.img;
+  img.alt = `foto di ${member.name}`;
   
   const divDati = document.createElement('div'); 
   divDati.classList.add('dati');
 
-  teamListEl.innerHTML
+  const name = document.createElement('h2'); 
+  name.classList.add('nome'); 
+  name.textContent = member.name;
+  
+  const role = document.createElement('p'); 
+  role.textContent = member.role;
+
+  const email = document.createElement('a');
+  email.href = 'mailto:' + member.email; 
+  email.textContent = member.email;
+
+  imgContainer.append(img) 
+  divDati.append(name, role, email) 
+  article.append(imgContainer, divDati) 
+  teamListEl.append(article)
 })
