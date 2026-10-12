@@ -1,6 +1,8 @@
 .contenitore {
   max-width: 512px;
-  
+  margin: auto;
+  padding: 20px;
+  box-sizing: border-box;
 }
 
 .team {
@@ -24,7 +26,6 @@
   color: white;
   background-color: black;
   gap: 20px;
-  margin: 40px;
 }
 
 .img-container {
@@ -41,4 +42,23 @@
 
 .nome {
   font-size: 25px;
+}
+
+/* regole form*/
+
+.form-member {
+  margin-bottom: 15px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.form-member label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form-member input {
+  width: 100%;
+  padding: 8px 12px;
+  box-sizing: border-box;
 }
