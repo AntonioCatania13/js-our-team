@@ -1,5 +1,6 @@
 .contenitore {
   max-width: 512px;
+  width: 100%;
   margin: auto;
   padding: 20px;
   box-sizing: border-box;
@@ -48,8 +49,6 @@
 
 .form-member {
   margin-bottom: 15px;
-  margin-left: 20px;
-  margin-right: 20px;
 }
 
 .form-member label {
@@ -61,4 +60,10 @@
   width: 100%;
   padding: 8px 12px;
   box-sizing: border-box;
+}
+
+.btn-submit {
+  border-radius: 10px;
+  background-color: rgb(0, 21, 255);
+  color: white;
 }
